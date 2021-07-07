@@ -10,8 +10,6 @@ def protecao_de_senha():
         exit()
     else:
         print('Senha negada')
-        
-
 
 
 #operacoes
@@ -58,8 +56,6 @@ Selecione abaixo as operacoes:
     #Pergunta se deseja fazer novamente
     de_novo()
 
-
-
 #Fazendo a pergunta para se deseja refazer o calculo
 def de_novo():
     calc_de_novo = input('''
@@ -77,11 +73,6 @@ Selecione Y para sim ou N para nao.
 
     else:
         calc_de_novo()
-
-
-
-    
-    
 
 
 #chamando as funcoes
