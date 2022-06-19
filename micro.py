@@ -80,7 +80,7 @@ Selecione Y para sim ou N para nao.
 
 
 # chamando as funcoes
-# protecao_de_senha()
+protecao_de_senha()
 calculadora()
 de_novo()
 
