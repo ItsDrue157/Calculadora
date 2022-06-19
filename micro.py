@@ -1,9 +1,10 @@
-#Blibio
-import time 
+# blibliotecas
+import time
 import getpass
+from unittest import case
 
 
-def protecao_de_senha(): 
+def protecao_de_senha():
     master_password = str('carlos')
     senha = str(input('Qual a sua senha? '))
     if senha != master_password:
@@ -12,7 +13,8 @@ def protecao_de_senha():
         print('Senha negada')
 
 
-#operacoes
+
+
 def calculadora():
     operation = input('''
 Selecione abaixo as operacoes:
@@ -22,12 +24,16 @@ Selecione abaixo as operacoes:
 / para divisao
 ''')
 
-    #Declarando variaveis 
+    # Declarando variaveis
     numero_1 = int(input('Entre o primeiro numero: '))
     numero_2 = int(input('Entre o segundo numero : '))
-    
-   
-    #Operacoes abaixo
+
+        
+
+
+
+
+    # Operacoes abaixo
     if operation == '+':
         print('{} + {} = '.format(numero_1, numero_2))
         print(numero_1 + numero_2)
@@ -39,24 +45,22 @@ Selecione abaixo as operacoes:
     elif operation == '*':
         print('{} * {} = '.format(numero_1, numero_2))
         print(numero_1 * numero_2)
-    
+
     elif operation == '/':
-    
+
         print('{} / {} = '.format(numero_1, numero_2))
         print(numero_1 / numero_2)
-    
-    
 
-    
-    
-    #Se a entrada de dados for diferente de +, - , * ,/ .
+    # Se a entrada de dados for diferente de +, - , * ,/ .
     else:
         operation != '+, -, *, /'
         print("Opcao negada tente novamente"), exit()
-    #Pergunta se deseja fazer novamente
+    # Pergunta se deseja fazer novamente
     de_novo()
 
-#Fazendo a pergunta para se deseja refazer o calculo
+# Fazendo a pergunta para se deseja refazer o calculo
+
+
 def de_novo():
     calc_de_novo = input('''
 Deseja calcular novamente?
@@ -75,12 +79,11 @@ Selecione Y para sim ou N para nao.
         calc_de_novo()
 
 
-#chamando as funcoes
-protecao_de_senha()
+# chamando as funcoes
+# protecao_de_senha()
 calculadora()
 de_novo()
 
 
-#tempo para permanecer a resposta na tela
+# tempo para permanecer a resposta na tela
 time.sleep(5)
-
