@@ -25,10 +25,11 @@ Selecione abaixo as operacoes:
 ''')
 
     # Declarando variaveis
-    numero_1 = int(input('Entre o primeiro numero: '))
-    numero_2 = int(input('Entre o segundo numero : '))
+    numero_1 = input('Entre o primeiro numero: ')
+    numero_2 = input('Entre o segundo numero : ')
 
-        
+    if numero_1 is not [0,1,2,3,4,5,6,7,8,9]: 
+        print("Teste")    
 
 
 
@@ -80,7 +81,7 @@ Selecione Y para sim ou N para nao.
 
 
 # chamando as funcoes
-protecao_de_senha()
+#protecao_de_senha()
 calculadora()
 de_novo()
 
